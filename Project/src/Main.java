@@ -39,5 +39,11 @@ public class Main {
 
         area = width * height;
         System.out.println("Area : " + area + " cm^2");
+
+        int friends = 10;
+
+        friends++;
+
+        System.out.println("I have " + friends + " friends!");
     }
 }
