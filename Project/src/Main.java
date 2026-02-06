@@ -1,9 +1,11 @@
+import classesù.Motorbike;
+
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-        System.out.print("A me piace la pizza!\n");
+        // System.out.print("A me piace la pizza!\n");
 
         /*int age = 98;
 
@@ -25,6 +27,8 @@ public class Main {
         */
 
         // use case example of input (Scanner library)
+        /*
+
         double width = 0;
         double height = 0;
         double area = 0;
@@ -45,5 +49,19 @@ public class Main {
         friends++;
 
         System.out.println("I have " + friends + " friends!");
+         */
+
+        Motorbike myFirst = new Motorbike();
+
+        myFirst.brand = "Zontac";
+        myFirst.cc = 125;
+        myFirst.Colour = "Black";
+
+        System.out.println("The " + myFirst.Colour + " " + myFirst.brand + " is starting....");
+
+        myFirst.startEngine();
+
+        myFirst.test();
+
     }
 }
