@@ -51,17 +51,29 @@ public class Main {
         System.out.println("I have " + friends + " friends!");
          */
 
+        // Old method without constructor
+        /*
         Motorbike myFirst = new Motorbike();
 
         myFirst.brand = "Zontac";
         myFirst.cc = 125;
         myFirst.Colour = "Black";
 
-        System.out.println("The " + myFirst.Colour + " " + myFirst.brand + " is starting....");
+        System.out.println("You got a " + myFirst.Colour + " " + myFirst.brand + " !");
 
         myFirst.startEngine();
 
         myFirst.test();
+        */
 
+        // New method with Constructor
+        Motorbike myFirst = new Motorbike("Kawasaki", "Green");
+
+        System.out.println("The " + myFirst.Colour + " " + myFirst.brand + " is ready");
+
+        // If we comment this out and the engine doesn't start, a message will remind the program to
+        myFirst.startEngine();
+
+        myFirst.test();
     }
 }

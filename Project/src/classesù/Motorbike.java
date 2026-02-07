@@ -6,16 +6,22 @@ public class Motorbike {
     public int cc;
     public String Colour;
 
-    boolean isOn = false;
+    boolean isOn;
+
+    public Motorbike(String inputBrand, String inputColour) {
+        brand = inputBrand;
+        Colour = inputColour;
+        isOn = false;
+    }
 
     public void startEngine() {
-        System.out.println("The " + brand + " is starting.");
+        System.out.println("The " + Colour + " " + brand + " is starting.");
         isOn = true;
     }
 
     public void test() {
         if(isOn) {
-            System.out.println("The " + Colour + " " + brand + " is ready!");
+            System.out.println("The " + Colour + " " + brand + "'s engine is ready!");
         } else {
             System.out.println("Please remember to start the engine!");
         }
