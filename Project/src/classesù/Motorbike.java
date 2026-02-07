@@ -2,11 +2,50 @@ package classesù;
 
 public class Motorbike {
 
-    public String brand;
-    public int cc;
-    public String Colour;
+    private String brand;
+    private int cc;
+    private String Colour;
 
     boolean isOn;
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public int getCc() {
+        return cc;
+    }
+
+    public String getColour() {
+        return Colour;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+
+    public void setColour(String colour) {
+        Colour = colour;
+    }
+
+    public void setOn(boolean on) {
+        isOn = on;
+    }
+
+    public boolean isOn() {
+        return isOn;
+    }
+
+    public void setCC(int cc) {
+        if(cc > 0 && cc < 175) {
+            this.cc = cc;
+        } else {
+            System.out.println("Invalid cc inputted!");
+        }
+    }
+
+
 
     public Motorbike(String inputBrand, String inputColour) {
         brand = inputBrand;
