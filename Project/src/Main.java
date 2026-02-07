@@ -71,14 +71,10 @@ public class Main {
 
         System.out.println("The " + myFirst.getColour() + " " + myFirst.getBrand() + " is ready");
 
-        myFirst.setCC(150);
-        // we can test for the control, (comment either)
-        myFirst.setCC(1500); // will throw an invalid text "Invalid cc inputted!"
-
-
         // If we comment this out and the engine doesn't start, a message will remind the program to
         myFirst.startEngine();
 
-        myFirst.test();
+        myFirst.doWheelie();
+
     }
 }
